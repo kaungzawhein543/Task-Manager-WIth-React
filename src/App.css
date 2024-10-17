@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
 .App{
   max-width: 600px;
   margin: 0 auto;
@@ -15,6 +17,7 @@ ul{
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 10px;
 }
 button {
   padding: 12px 20px;
@@ -41,7 +44,12 @@ li button:hover{
 li {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 12px;
+  width: 90%;
+  font-size: 20px;
+  font-family: "Agdasima", sans-serif;
+  font-weight: 500;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #fff;
