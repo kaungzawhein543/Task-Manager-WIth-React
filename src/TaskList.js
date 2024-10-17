@@ -7,8 +7,10 @@ function TaskList(props){
                 props.tasks.map((task, index) =>{
                     return(
                     <li key={index} style={{textDecoration: task.completed ? "line-through": "none"}}>
-                        <input type="checkbox" checked={task.completed} onChange={()=>props.handleToggleComplete(index)}/>
-                        {task.text}
+                        <div>
+                            <input id={index} checked={task.completed} type="checkbox" onChange={()=>props.handleToggleComplete(index)}/>
+                            <label for={index}>{task.text}</label>
+                        </div>
                         <button onClick={() => props.handelDeleteTask(index)}>Delete</button>
                     </li>
                     );
