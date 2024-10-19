@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .App{
-  max-width: 600px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f4f4f9;
@@ -35,7 +34,6 @@ button:hover{
   background-color: #0056b3;
 }
 li button{
-  margin-left: auto;
   background-color: #dc3545;
 }
 li button:hover{
@@ -46,17 +44,26 @@ li {
   align-items: center;
   justify-content: center;
   padding: 12px;
-  width: 90%;
-  font-size: 20px;
-  font-family: "Agdasima", sans-serif;
-  font-weight: 500;
+  width: 95%;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #fff;
   margin-bottom: 10px;
   box-shadow: 0 2px 4px rgba( 0, 0, 0, 0.1);
 }
-input[type="text"]{
-  width: 70%;
+.Task_Name > input {
   padding: 12px;
+}
+.Task_Name{
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+}
+.parent{
+  display: flex;
+  height: auto;
+  align-items: center;
 }
